@@ -1,7 +1,13 @@
 namespace refactoring
 {
-    class MemeGenerator
+    class Transportmittel
     {
-        //QUENTIN STINKT
+        
+        public Transportmittel()
+        {
+            
+        }
+
+
     }
 }
