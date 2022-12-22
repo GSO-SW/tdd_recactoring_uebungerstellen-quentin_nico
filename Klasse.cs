@@ -12,6 +12,10 @@ namespace refactoring
         string kennung = UNKNOWN;
 
 
+        public int PS = 0;
+        public int ZugelassenesGewicht = 0;
+
+
         public int AnzahlTriebwerke
         {
             get {return anzahlTriebwerke;}
@@ -82,6 +86,20 @@ namespace refactoring
 
             return k;
 
+
+        }
+
+        public bool IstLadungZuSchwer(int g)
+        {
+
+            if(anzahlReifen <= 2)
+                g = g*2;
+
+            if(g > ZugelassenesGewicht)
+                return true;
+
+            if((PS * 10) < g )
+                return true;
 
         }
 
