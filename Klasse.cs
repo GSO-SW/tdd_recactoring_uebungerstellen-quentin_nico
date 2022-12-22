@@ -62,7 +62,7 @@ namespace refactoring
         }
 
         
-        public Transportmittel(int anzahlReifen,int anzahlTurbinen,int anzahlSchiffsschrauben,int anzahlTueren,int anzahlFluegel, int anzahlTriebwerke)
+        public Transportmittel(int anzahlReifen,int anzahlTurbinen,int anzahlSchiffsschrauben,int anzahlTueren,int anzahlFluegel, int anzahlTriebwerke,double kilometerstand)
         {
             this.anzahlReifen = anzahlReifen;
             this.anzahlTurbinen = anzahlTurbinen;
@@ -70,6 +70,7 @@ namespace refactoring
             this.anzahlTueren = anzahlTueren;
             this.anzahlFluegel = anzahlFluegel;
             this.anzahlTriebwerke = anzahlTriebwerke;
+            this.kilometerstand = kilometerstand;
         }
 
         public double StreckeZurueckgelegt(double strecke)
